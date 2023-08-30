@@ -1,0 +1,157 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: PushAgent
+  Id: g=439a5aafa9eaba409f275e45d88f860f
+  Type: NetLogic
+  Children:
+  - Name: DataLogger
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"8abf6032e0ae006b2f182ec5a5b2e4c4","Namespace":32}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":7}
+  - Name: PushFullSample
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: PreserveDataLoggerHistory
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: MaximumStoreCapacity
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1000
+  - Name: MaximumItemsPerPacket
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+  - Name: MaximumPublishTime
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:1.0000000"
+  - Name: MinimumPublishTime
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:0.5000000"
+  - Name: ClientId
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: BrokerIPAddress
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "10.6.10.166"
+  - Name: BrokerPort
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1883
+  - Name: BrokerTopic
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "iotdemo-processdata"
+  - Name: QoS
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 2
+  - Name: UseSSL
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: CACert
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=32;%PROJECTDIR%/client/ca.pem"
+    - Name: ClientCert
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=32;%PROJECTDIR%/client/client.pfx"
+    - Name: ClientCertPassword
+      Type: BaseDataVariableType
+      DataType: Password
+      Value: "asem"
+  - Name: Username
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Password
+    Type: BaseDataVariableType
+    DataType: Password
+    Value: ""
+  - Class: Method
+    Name: SendChatMessage
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"machineName","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"messageText","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: Connected
+    Id: g=ffe7075a66240abe4a45c516cb72dbfe
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Class: Method
+    Name: AttachNewMachine
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"machineName","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: PushAgentAlarmsRecipes
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: PushAlarm
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"message","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: StartStopJob
+  Type: NetLogic
+- Name: ClockLogic1
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Time
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/DateTime/localTime"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: UTCTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/DateTime/UTCTime"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2

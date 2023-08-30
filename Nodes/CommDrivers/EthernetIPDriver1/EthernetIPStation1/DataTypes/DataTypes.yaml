@@ -1,0 +1,59 @@
+Name: ns=23;DataTypes
+Type: FolderType
+Children:
+- Class: DataType
+  Name: DATETIMESTRUCT
+  Id: g=67316e62d2a498186dded6d1e5281db9
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "DATETIMESTRUCT",
+    "DataType": {
+     "IdType": 2,
+     "Id": "67316e62d2a498186dded6d1e5281db9",
+     "Namespace": 32
+    },
+    "Fields": [{
+      "Name": "Day",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Hour",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Microsecond",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Minute",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Month",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Second",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Year",
+      "DataType": {
+       "Id": 6
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"DATETIMESTRUCT"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding

@@ -1,0 +1,5 @@
+Name: CommDrivers
+Type: CommDriversCategoryFolder
+Children:
+- File: EthernetIPDriver1/EthernetIPDriver1.yaml
+- File: ModbusDriver1/ModbusDriver1.yaml

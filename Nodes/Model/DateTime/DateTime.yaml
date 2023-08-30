@@ -1,0 +1,12 @@
+Name: DateTime
+Type: FolderType
+Children:
+- Name: localTime
+  Id: g=4f23f21325436e182b60d519ad6d2003
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "1601-01-01T00:00:00.0000000"
+- Name: UTCTime
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "1601-01-01T00:00:00.0000000"

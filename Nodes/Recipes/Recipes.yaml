@@ -1,0 +1,117 @@
+Name: Recipes
+Type: RecipesCategoryFolder
+Children:
+- Name: RecipeSchema1
+  Id: g=c5ec5e8ae75ef32f4afcb7c5cdf4757f
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Type: BaseObjectType
+    Children:
+    - Name: SET_Duration_F
+      Type: BaseDataVariableType
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [4]
+      Value: [0,0,0,0]
+    - Name: SET_SpeedFanInput_F
+      Type: BaseDataVariableType
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [4]
+      Value: [0,0,0,0]
+    - Name: SET_SpeedFanOutput_F
+      Type: BaseDataVariableType
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [4]
+      Value: [0,0,0,0]
+    - Name: SET_TemperatureSetpoint_F
+      Type: BaseDataVariableType
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [4]
+      Value: [0,0,0,0]
+  - Class: Reference
+    Target: ns=17;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=60
+    Direction: Forward
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"b9dc8bbf0191bd746483c4147eafa06d","Namespace":32}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":11}
+  - Name: TableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "iotdemo-Recipes"
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"b6e2d6408ef88e1505aeb6c71e26dab1","Namespace":32}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EditModel
+    Id: g=24f0f015fb93ba46fc9b3e8b99d2399b
+    Type: BaseObjectType
+    Children:
+    - Name: SET_Duration_F
+      Type: BaseDataVariableType
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [4]
+      Value: [0,0,0,0]
+    - Name: SET_SpeedFanInput_F
+      Type: BaseDataVariableType
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [4]
+      Value: [0,0,0,0]
+    - Name: SET_SpeedFanOutput_F
+      Type: BaseDataVariableType
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [4]
+      Value: [0,0,0,0]
+    - Name: SET_TemperatureSetpoint_F
+      Type: BaseDataVariableType
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [4]
+      Value: [0,0,0,0]

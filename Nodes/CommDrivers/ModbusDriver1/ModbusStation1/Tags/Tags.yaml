@@ -1,0 +1,41 @@
+Name: Tags
+Type: FolderType
+Children:
+- Name: MBInputRegister01
+  Id: g=966fa7ae99598443a40acc68dd772c23
+  Type: ModbusTag
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 2
+- Name: MBInputRegister02
+  Id: g=e312f449dbf45ba3aec527e7ff541f13
+  Type: ModbusTag
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 2
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1
+- Name: MBInputRegister03
+  Id: g=b3cff5e888aed67d78b578987b5d94fa
+  Type: ModbusTag
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 2
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2

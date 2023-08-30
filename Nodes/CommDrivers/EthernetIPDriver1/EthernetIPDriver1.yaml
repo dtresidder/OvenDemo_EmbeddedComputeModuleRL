@@ -1,0 +1,4 @@
+Name: EthernetIPDriver1
+Type: RAEtherNetIPDriver
+Children:
+- File: EthernetIPStation1/EthernetIPStation1.yaml
